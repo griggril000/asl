@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ASL Signs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>ASL Signs</h1>
+  </header>
+  <main>
+    <h2>Search for a Sign</h2>
+    <form onsubmit="event.preventDefault(); search_csv('signdata.csv', document.getElementById('search').value);">
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    <!-- <p>2024 ASL Signs</p> -->
+    <!-- Adding Citation/License Information -->
+
+    <h2>Attribution</h2>
+    <!-- Attribution Information -->
+    <div id="attribution">
+      <p>Sevcikova Sehyr, Z., Caselli, N., Cohen-Goldberg, A. M., & Emmorey, K. (2021). ​The ASL-LEX 2.0 Project: A
+        database of lexical and phonological properties for 2,723 signs in American Sign Language. <i>Journal of Deaf
+          Studies and Deaf Education</i>. <a href="doi.org/10.1093/deafed/enaa038"
+          target="_blank">doi.org/10.1093/deafed/enaa038</a>.</p>
+
+      <p>Caselli, N., Sevcikova Sehyr, Z., Cohen-Goldberg, A. M., & Emmorey, K. (2017). ASL-LEX: A lexical database
+        of American Sign Language. <i>Behavior Research Methods</i>, 49(2), 784-801. <a
+          href="https://doi.org/10.3758/s13428-016-0742-0" target="_blank">doi:10.3758/s13428-016-0742-0</a>.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
